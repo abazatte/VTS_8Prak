@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="billboard.js"></script>
+</head>
+<body style="font-family:arial;">
+<h1>Plakatwand</h1>
+<h3>Neues Plakat einstellen:</h3>
+<input type="text" size="100" maxlength="100" id="contents">
+<button onclick="postHttpRequest('BillBoardServer')">Post</button>
+<h3>Plakate:</h3>
+<div id="posters">
+    <table border="1" rules="none" cellspacing="4" cellpadding="5">
+        <tbody>
+        <tr>
+            <td>0</td>
+            <td><input type="text" size="100" minlength="100" maxlength="100" id="input_field_0" value="<empty>"></td>
+            <td>
+                <button id="put0" onclick="putHttpRequest('BillBoardServer',0)">Update</button>
+            </td>
+            <td>
+                <button id="delete0" onclick="deleteHttpRequest('BillBoardServer',0)">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><input type="text" size="100" minlength="100" maxlength="100" id="input_field_1" value="<empty>"></td>
+            <td>
+                <button id="put1" onclick="putHttpRequest('BillBoardServer',1)">Update</button>
+            </td>
+            <td>
+                <button id="delete1" onclick="deleteHttpRequest('BillBoardServer',1)">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><input type="text" size="100" minlength="100" maxlength="100" id="input_field_2" value="<empty>"></td>
+            <td>
+                <button id="put2" onclick="putHttpRequest('BillBoardServer',2)">Update</button>
+            </td>
+            <td>
+                <button id="delete2" onclick="deleteHttpRequest('BillBoardServer',2)">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><input type="text" size="100" minlength="100" maxlength="100" id="input_field_3" value="<empty>"></td>
+            <td>
+                <button id="put3" onclick="putHttpRequest('BillBoardServer',3)">Update</button>
+            </td>
+            <td>
+                <button id="delete3" onclick="deleteHttpRequest('BillBoardServer',3)">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><input type="text" size="100" minlength="100" maxlength="100" id="input_field_4" value="<empty>"></td>
+            <td>
+                <button id="put4" onclick="putHttpRequest('BillBoardServer',4)">Update</button>
+            </td>
+            <td>
+                <button id="delete4" onclick="deleteHttpRequest('BillBoardServer',4)">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><input type="text" size="100" minlength="100" maxlength="100" id="input_field_5" value="<empty>"></td>
+            <td>
+                <button id="put5" onclick="putHttpRequest('BillBoardServer',5)">Update</button>
+            </td>
+            <td>
+                <button id="delete5" onclick="deleteHttpRequest('BillBoardServer',5)">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><input type="text" size="100" minlength="100" maxlength="100" id="input_field_6" value="<empty>"></td>
+            <td>
+                <button id="put6" onclick="putHttpRequest('BillBoardServer',6)">Update</button>
+            </td>
+            <td>
+                <button id="delete6" onclick="deleteHttpRequest('BillBoardServer',6)">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><input type="text" size="100" minlength="100" maxlength="100" id="input_field_7" value="<empty>"></td>
+            <td>
+                <button id="put7" onclick="putHttpRequest('BillBoardServer',7)">Update</button>
+            </td>
+            <td>
+                <button id="delete7" onclick="deleteHttpRequest('BillBoardServer',7)">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><input type="text" size="100" minlength="100" maxlength="100" id="input_field_8" value="<empty>"></td>
+            <td>
+                <button id="put8" onclick="putHttpRequest('BillBoardServer',8)">Update</button>
+            </td>
+            <td>
+                <button id="delete8" onclick="deleteHttpRequest('BillBoardServer',8)">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><input type="text" size="100" minlength="100" maxlength="100" id="input_field_9" value="<empty>"></td>
+            <td>
+                <button id="put9" onclick="putHttpRequest('BillBoardServer',9)">Update</button>
+            </td>
+            <td>
+                <button id="delete9" onclick="deleteHttpRequest('BillBoardServer',9)">Delete</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<div id="timestamp" style="font-family:arial;font-size:10pt;">Mon Jun 13 2022 17:32:10 GMT+0200 (Mitteleuropäische
+    Sommerzeit)
+</div>
+
+</body>
+</html>
