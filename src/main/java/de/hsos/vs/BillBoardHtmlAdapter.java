@@ -1,20 +1,29 @@
 package de.hsos.vs;
 
+import de.hsos.vs.BillBoard;
+import de.hsos.vs.BillBoardAdapterIf;
+import de.hsos.vs.BillBoardEntry;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 /**
  * Implementierung HTML BillBoard Adapters.
- * 
+ *
  * @author heikerli
  */
 public class BillBoardHtmlAdapter extends BillBoard implements BillBoardAdapterIf {
-    
+
     public BillBoardHtmlAdapter(String ctxt) {
-        super (ctxt);
-    };
+        super(ctxt);
+    }
+
+    ;
 
     /**
-     * Lesen eines Eintraeges. 
+     * Lesen eines Eintraeges.
      *
-     * @param idx Index des Parameters
+     * @param idx       Index des Parameters
      * @param caller_ip IP-Adresse des Aufrufers
      * @return Eintrag als Tabellen-Eintrag
      */
@@ -56,12 +65,12 @@ public class BillBoardHtmlAdapter extends BillBoard implements BillBoardAdapterI
         result.append("</tr>");
         return result.toString();
     }
-    
+
     /**
      * Lesen eines Eintrags. Der Eintrag wird als html-Tabelle
      * zurückgegeben und kann ohne weiteres in ein html-Dokument
      * eingebunden werden.
-     * 
+     *
      * @param caller_ip IP-Adresse des Aufrufers
      * @return Eintrag als html-Tabelle
      */
@@ -73,5 +82,5 @@ public class BillBoardHtmlAdapter extends BillBoard implements BillBoardAdapterI
             result.append(readEntry(e.id, caller_ip));
         }
         return result.toString();
-    };    
+    }
 }
